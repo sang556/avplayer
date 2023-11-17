@@ -1,0 +1,6 @@
+framework module MYAudioTapProcessorSDK {
+  umbrella header "MYAudioTapProcessorSDK.h"
+
+  export *
+  module * { export * }
+}

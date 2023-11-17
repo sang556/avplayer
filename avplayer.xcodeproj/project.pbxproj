@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA768EB82758969B0074D0AD /* MYAudioTapProcessorSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA768EB72758969B0074D0AD /* MYAudioTapProcessorSDK.framework */; };
+		AA768ECC2758B1660074D0AD /* MYAudioTapProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = AA768ECB2758B1660074D0AD /* MYAudioTapProcessor.m */; };
 		CCAB2D0D1DF6C6BC00A8DC5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAB2D0C1DF6C6BC00A8DC5E /* AppDelegate.swift */; };
 		CCAB2D0F1DF6C6BC00A8DC5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAB2D0E1DF6C6BC00A8DC5E /* ViewController.swift */; };
 		CCAB2D121DF6C6BC00A8DC5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAB2D101DF6C6BC00A8DC5E /* Main.storyboard */; };
@@ -14,10 +16,12 @@
 		CCAB2D171DF6C6BD00A8DC5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCAB2D161DF6C6BD00A8DC5E /* Assets.xcassets */; };
 		CCAB2D1A1DF6C6BD00A8DC5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAB2D181DF6C6BD00A8DC5E /* LaunchScreen.storyboard */; };
 		CCAB2D221DF6C7C100A8DC5E /* bet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCAB2D211DF6C7C000A8DC5E /* bet.mp3 */; };
-		CCAB2D261DF6C8E500A8DC5E /* MYAudioTapProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAB2D251DF6C8E500A8DC5E /* MYAudioTapProcessor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA768EB72758969B0074D0AD /* MYAudioTapProcessorSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MYAudioTapProcessorSDK.framework; sourceTree = "<group>"; };
+		AA768ECA2758B1660074D0AD /* MYAudioTapProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAudioTapProcessor.h; sourceTree = "<group>"; };
+		AA768ECB2758B1660074D0AD /* MYAudioTapProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAudioTapProcessor.m; sourceTree = "<group>"; };
 		CCAB2D091DF6C6BC00A8DC5E /* avplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAB2D0C1DF6C6BC00A8DC5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCAB2D0E1DF6C6BC00A8DC5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,8 +32,6 @@
 		CCAB2D1B1DF6C6BD00A8DC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCAB2D211DF6C7C000A8DC5E /* bet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bet.mp3; sourceTree = "<group>"; };
 		CCAB2D231DF6C8E400A8DC5E /* avplayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "avplayer-Bridging-Header.h"; sourceTree = "<group>"; };
-		CCAB2D241DF6C8E500A8DC5E /* MYAudioTapProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAudioTapProcessor.h; sourceTree = "<group>"; };
-		CCAB2D251DF6C8E500A8DC5E /* MYAudioTapProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAudioTapProcessor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA768EB82758969B0074D0AD /* MYAudioTapProcessorSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 		CCAB2D001DF6C6BC00A8DC5E = {
 			isa = PBXGroup;
 			children = (
+				AA768EB72758969B0074D0AD /* MYAudioTapProcessorSDK.framework */,
 				CCAB2D0B1DF6C6BC00A8DC5E /* avplayer */,
 				CCAB2D0A1DF6C6BC00A8DC5E /* Products */,
 			);
@@ -62,6 +66,8 @@
 		CCAB2D0B1DF6C6BC00A8DC5E /* avplayer */ = {
 			isa = PBXGroup;
 			children = (
+				AA768ECA2758B1660074D0AD /* MYAudioTapProcessor.h */,
+				AA768ECB2758B1660074D0AD /* MYAudioTapProcessor.m */,
 				CCAB2D0C1DF6C6BC00A8DC5E /* AppDelegate.swift */,
 				CCAB2D0E1DF6C6BC00A8DC5E /* ViewController.swift */,
 				CCAB2D211DF6C7C000A8DC5E /* bet.mp3 */,
@@ -70,8 +76,6 @@
 				CCAB2D181DF6C6BD00A8DC5E /* LaunchScreen.storyboard */,
 				CCAB2D1B1DF6C6BD00A8DC5E /* Info.plist */,
 				CCAB2D131DF6C6BD00A8DC5E /* avplayer.xcdatamodeld */,
-				CCAB2D241DF6C8E500A8DC5E /* MYAudioTapProcessor.h */,
-				CCAB2D251DF6C8E500A8DC5E /* MYAudioTapProcessor.m */,
 				CCAB2D231DF6C8E400A8DC5E /* avplayer-Bridging-Header.h */,
 			);
 			path = avplayer;
@@ -109,7 +113,7 @@
 				TargetAttributes = {
 					CCAB2D081DF6C6BC00A8DC5E = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 498HW5FJU7;
+						DevelopmentTeam = M8ZL2TJHJ3;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -120,6 +124,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -153,7 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCAB2D0F1DF6C6BC00A8DC5E /* ViewController.swift in Sources */,
-				CCAB2D261DF6C8E500A8DC5E /* MYAudioTapProcessor.m in Sources */,
+				AA768ECC2758B1660074D0AD /* MYAudioTapProcessor.m in Sources */,
 				CCAB2D151DF6C6BD00A8DC5E /* avplayer.xcdatamodeld in Sources */,
 				CCAB2D0D1DF6C6BC00A8DC5E /* AppDelegate.swift in Sources */,
 			);
@@ -277,14 +282,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 498HW5FJU7;
+				DEVELOPMENT_TEAM = M8ZL2TJHJ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = avplayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.med..avplayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "avplayer/avplayer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -293,13 +302,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 498HW5FJU7;
+				DEVELOPMENT_TEAM = M8ZL2TJHJ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = avplayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.med..avplayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "avplayer/avplayer-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

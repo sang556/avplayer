@@ -62,6 +62,10 @@ static OSStatus AU_RenderCallback(void *inRefCon, AudioUnitRenderActionFlags *io
 
 - (AVAudioMix *)audioMix
 {
+    //设置锁屏仍能继续播放
+    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
+    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+    
 	if (!_audioMix)
 	{
 		AVMutableAudioMix *audioMix = [AVMutableAudioMix audioMix];

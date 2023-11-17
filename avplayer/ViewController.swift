@@ -12,7 +12,7 @@
 
 import UIKit
 import AVFoundation
-
+import MYAudioTapProcessorSDK
 
 class ViewController: UIViewController,MYAudioTabProcessorDelegate {
     var player:AVPlayer!
@@ -33,9 +33,13 @@ class ViewController: UIViewController,MYAudioTabProcessorDelegate {
         playerItem.addObserver(self, forKeyPath: "tracks", options: NSKeyValueObservingOptions.new, context:  nil);
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: OperationQueue.main, using: { (notif: Notification) -> Void in
-            self.player.seek(to: kCMTimeZero)
+            self.player.seek(to: CMTime.zero)
             self.player.play()
             print("replay")
+        })
+        //程序退出时执行
+        NotificationCenter.default.addObserver(forName: UIApplication.willTerminateNotification, object: nil, queue: nil, using: { (notif: Notification) -> Void in
+            print("willTerminateNotification----------")
         })
         
         player.play()
